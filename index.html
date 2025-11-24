@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body class="light-theme">
+<body class="dark-theme">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M28M3FR"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -605,7 +605,7 @@
         const body = document.body;
         
         // Check for saved theme preference
-        const savedTheme = localStorage.getItem('theme') || 'light';
+        const savedTheme = localStorage.getItem('theme') || 'dark';
         body.classList.add(savedTheme + '-theme');
         
         // Smooth scroll for navigation
