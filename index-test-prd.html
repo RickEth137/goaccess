@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoAccess - PRD Test Version</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-prd-test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fixed Video Background -->
+    <div class="fixed-video-bg">
+        <video autoplay muted loop id="fixed-bg-video">
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="fixed-video-overlay"></div>
+
+    <!-- Navigation Bar - PRD Structure -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="GO ACCESS-gold.png" alt="GOACCESS" class="brand-logo">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experiencias" class="nav-link">Experiences</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#concierge" class="nav-link">Concierge</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#quienes-somos" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacto" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="social-icons">
+                <a href="#" class="social-link" aria-label="Instagram">
+                    Instagram
+                </a>
+                <a href="#" class="social-link" aria-label="TikTok">
+                    TikTok
+                </a>
+            </div>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Integrated Navigation -->
+    <section id="home" class="hero hero-integrated">
+        <div class="video-container">
+            <video autoplay muted loop id="bg-video">
+                <source src="Goaccesseheader.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <!-- Glassmorphism Frame Border -->
+        <div class="hero-frame">
+            <!-- Logo Top Left -->
+            <div class="hero-brand">
+                <img src="GO ACCESS-gold.png" alt="GOACCESS" class="hero-brand-logo">
+            </div>
+            
+            <!-- Hamburger Menu Top Right -->
+            <div class="hero-menu-toggle">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </div>
+            
+            <!-- Tagline Right Side -->
+            <div class="hero-tagline">
+                <div class="tagline-icon">✈️</div>
+                <p>The art of traveling with exclusivity, comfort, and limitless access.</p>
+            </div>
+            
+            <!-- Main Content Card -->
+            <div class="hero-card">
+                <div class="hero-logo-center">
+                    <img src="GO ACCESS-white.png" alt="GOACCESS" class="main-logo">
+                </div>
+                
+                <h1 class="hero-subtitle">Luxury Concierge</h1>
+                
+                <!-- Navigation Tabs -->
+                <div class="hero-tabs">
+                    <button class="hero-tab active" data-tab="experiences">Experiences</button>
+                    <button class="hero-tab" data-tab="concierge">Concierge</button>
+                    <button class="hero-tab" data-tab="about">About Us</button>
+                    <button class="hero-tab" data-tab="contact">Contact</button>
+                </div>
+                
+                <!-- Tab Content -->
+                <div class="tab-content active" id="experiences-content">
+                    <h3>Upcoming Experiences</h3>
+                    <p>Access the world's most exclusive events and experiences</p>
+                    <div class="quick-events">
+                        <div class="quick-event">
+                            <span class="event-name">Zamna Mexico City</span>
+                            <span class="event-date">Oct 31 & Nov 1</span>
+                        </div>
+                        <div class="quick-event">
+                            <span class="event-name">Untold Dubai</span>
+                            <span class="event-date">Nov 6-9</span>
+                        </div>
+                        <div class="quick-event">
+                            <span class="event-name">MRAK New Year's Eve</span>
+                            <span class="event-date">Dec 31</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block">View All Experiences</button>
+                </div>
+                
+                <div class="tab-content" id="concierge-content">
+                    <h3>Specialized Concierge</h3>
+                    <p>Premium luxury services for unforgettable vacations</p>
+                    <div class="service-list">
+                        <div class="service-item">🏰 Villa Rentals</div>
+                        <div class="service-item">🚗 Luxury Transportation</div>
+                        <div class="service-item">🎫 VIP Tickets & Tables</div>
+                        <div class="service-item">🍽️ Exclusive Reservations</div>
+                        <div class="service-item">⛵ Yachts & Activities</div>
+                    </div>
+                    <button class="btn btn-primary btn-block">Contact Concierge</button>
+                </div>
+                
+                <div class="tab-content" id="about-content">
+                    <h3>Why Choose Us</h3>
+                    <p>Creating unique travel experiences in the world's most inspiring destinations</p>
+                    <div class="stats-quick">
+                        <div class="stat-item">
+                            <strong>+10</strong>
+                            <span>Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong>+100</strong>
+                            <span>Satisfied Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong>+200</strong>
+                            <span>Extraordinary Journeys</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block">Learn More</button>
+                </div>
+                
+                <div class="tab-content" id="contact-content">
+                    <h3>Contact Us</h3>
+                    <p>Ready to begin your extraordinary journey?</p>
+                    <form class="contact-form-hero">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Phone" required>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                    <div class="whatsapp-quick">
+                        <a href="#" class="btn btn-whatsapp btn-block">
+                            💬 Contact via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Side Info Cards -->
+            <div class="hero-info-left">
+                <p>Exclusive Access</p>
+                <p>Worldwide</p>
+            </div>
+            
+            <div class="hero-info-right">
+                <p>Personalized</p>
+                <p>Service 24/7</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Descripción de Nosotros Section -->
+    <section id="descripcion" class="section">
+        <div class="container">
+            <h2>Who We Are</h2>
+            <div class="description-content">
+                <p>We create unique travel experiences in the world's most inspiring destinations. Our concierge service manages every detail, from accommodations and transportation to access to the most exclusive experiences. We specialize in connecting our clients with the extraordinary, caring for each moment with a touch of distinction and authenticity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Upcoming Experiences Section -->
+    <section id="experiencias" class="section">
+        <div class="container">
+            <h2>UPCOMING EXPERIENCES</h2>
+            <p>Limitless WorldWide Experiences</p>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-section">
+                <!-- Category Filters -->
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="concerts">Concerts</button>
+                    <button class="filter-btn" data-filter="festivals">Festivals</button>
+                    <button class="filter-btn" data-filter="sports">Sports</button>
+                </div>
+                
+                <!-- Location Filters -->
+                <div class="filter-group">
+                    <button class="filter-btn location-btn" data-location="mexico">
+                        <i class="location-icon"></i>Mexico
+                    </button>
+                    <button class="filter-btn location-btn" data-location="usa">
+                        <i class="location-icon"></i>United States
+                    </button>
+                    <button class="filter-btn location-btn" data-location="uae">
+                        <i class="location-icon"></i>United Arab Emirates
+                    </button>
+                    <button class="filter-btn location-btn" data-location="spain">
+                        <i class="location-icon"></i>Spain
+                    </button>
+                    <button class="filter-btn location-btn" data-location="egypt">
+                        <i class="location-icon"></i>Egypt
+                    </button>
+                </div>
+            </div>
+            
+            <div class="experiences-grid">
+                <div class="experience-card featured">
+                    <div class="experience-image">
+                        <img src="Events/01K2E69MX9FEKW9WN16CTV8PM0.jpg" alt="Zamna Mexico City">
+                        <div class="featured-badge">FEATURED</div>
+                        <div class="image-fade"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Zamna Mexico City 2025</h3>
+                        <div class="experience-details">
+                            <i class="icon-calendar"></i>
+                            <span>Oct 31 & Nov 1</span>
+                            <i class="icon-location"></i>
+                            <span>Sala Urbana</span>
+                        </div>
+                        <button class="experience-btn">GET TICKETS</button>
+                    </div>
+                </div>
+
+                <div class="experience-card featured">
+                    <div class="experience-image">
+                        <img src="Events/01K3H7KV4D07DXJKMNNBFKSYX3.jpg" alt="Zamna Toronto">
+                        <div class="featured-badge">FEATURED</div>
+                        <div class="image-fade"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Zamna Toronto - Halloween Weekend</h3>
+                        <div class="experience-details">
+                            <i class="icon-calendar"></i>
+                            <span>Oct 31 & Nov 1</span>
+                            <i class="icon-location"></i>
+                            <span>International Centre</span>
+                        </div>
+                        <button class="experience-btn">GET TICKETS</button>
+                    </div>
+                </div>
+
+                <div class="experience-card featured">
+                    <div class="experience-image">
+                        <img src="Events/01K3R6FZPHEXY1M505AJAX1MKT.png" alt="Untold Dubai">
+                        <div class="featured-badge">FEATURED</div>
+                        <div class="image-fade"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Untold Dubai's Mega Festival</h3>
+                        <div class="experience-details">
+                            <i class="icon-calendar"></i>
+                            <span>Nov 6-9</span>
+                            <i class="icon-location"></i>
+                            <span>Dubai Parks & Resorts</span>
+                        </div>
+                        <button class="experience-btn">GET TICKETS</button>
+                    </div>
+                </div>
+
+                <div class="experience-card featured">
+                    <div class="experience-image">
+                        <img src="Events/01K6N6AXMWNG5BKMYR4CEKRKRT.png" alt="Zamna San Francisco">
+                        <div class="featured-badge">FEATURED</div>
+                        <div class="image-fade"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Zamna San Francisco 2025</h3>
+                        <div class="experience-details">
+                            <i class="icon-calendar"></i>
+                            <span>Nov 1 & Nov 2</span>
+                            <i class="icon-location"></i>
+                            <span>The Midway</span>
+                        </div>
+                        <button class="experience-btn">GET TICKETS</button>
+                    </div>
+                </div>
+
+                <div class="experience-card featured">
+                    <div class="experience-image">
+                        <img src="Events/01K6R8W3CE2J6PV8X164ARJKVQ.png" alt="Zamna Sharm El-Sheikh">
+                        <div class="featured-badge">FEATURED</div>
+                        <div class="image-fade"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Zamna Sharm El-Sheikh</h3>
+                        <div class="experience-details">
+                            <i class="icon-calendar"></i>
+                            <span>Nov 21 & Nov 22</span>
+                            <i class="icon-location"></i>
+                            <span>Khorom Valley, Egypt</span>
+                        </div>
+                        <button class="experience-btn">GET TICKETS</button>
+                    </div>
+                </div>
+
+                <div class="experience-card featured">
+                    <div class="experience-image">
+                        <img src="Events/01K4WV8C73Z4EBBJ33E8Y5R86Q.png" alt="MRAK New Year's Eve">
+                        <div class="featured-badge">FEATURED</div>
+                        <div class="image-fade"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>MRAK Live - New Year's Eve</h3>
+                        <div class="experience-details">
+                            <i class="icon-calendar"></i>
+                            <span>Dec 31</span>
+                            <i class="icon-location"></i>
+                            <span>Laguna - Tulum</span>
+                        </div>
+                        <button class="experience-btn">GET TICKETS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Sección de Texto Relevante (Parallax) -->
+    <section class="parallax-section">
+        <div class="parallax-content">
+            <h2>With Go Access, you set the path and we make it a reality.</h2>
+            <p>We focus on creating a unique adventure for your next destination. Accommodations, transportation, access, reservations at exclusive clubs and restaurants; we take care of everything so you can simply enjoy to the fullest.</p>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Sección Concierge Especializado -->
+    <section id="concierge" class="section concierge-section">
+        <div class="container">
+            <h2>Forget about the planning, we'll handle everything.</h2>
+            <p class="section-subtitle">We offer the finest luxury services to make your vacation an unforgettable experience</p>
+            
+            <div class="services-grid">
+                <div class="service-card glass-effect">
+                    <div class="service-icon">🏰</div>
+                    <h3>Villa Rentals</h3>
+                    <p>Exclusive properties in premier destinations</p>
+                </div>
+
+                <div class="service-card glass-effect">
+                    <div class="service-icon">🚗</div>
+                    <h3>Luxury Transportation</h3>
+                    <p>Premium vehicles for your comfort</p>
+                </div>
+
+                <div class="service-card glass-effect">
+                    <div class="service-icon">🎫</div>
+                    <h3>VIP Tickets & Tables</h3>
+                    <p>Access to the most exclusive events</p>
+                </div>
+
+                <div class="service-card glass-effect">
+                    <div class="service-icon">🍽️</div>
+                    <h3>Exclusive Reservations</h3>
+                    <p>The finest restaurants and clubs</p>
+                </div>
+
+                <div class="service-card glass-effect">
+                    <div class="service-icon">⛵</div>
+                    <h3>Yachts & Activities</h3>
+                    <p>Luxury nautical experiences</p>
+                </div>
+            </div>
+
+            <div class="cta-whatsapp">
+                <a href="#" class="btn btn-primary btn-large">Contact via WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Sección Principales Destinos -->
+    <section class="section destinos-section">
+        <div class="container">
+            <h2>Premier Destinations</h2>
+            <p class="section-subtitle">Our service has no limits, though we pride ourselves on knowing destinations inside and out to provide you with the finest recommendations.</p>
+            
+            <div class="destinos-grid">
+                <div class="destino-card glass-effect">
+                    <img src="Villas/mexico.jpg" alt="México">
+                    <h3>Mexico</h3>
+                </div>
+                <div class="destino-card glass-effect">
+                    <img src="Villas/spain.jpg" alt="España">
+                    <h3>Spain</h3>
+                </div>
+                <div class="destino-card glass-effect">
+                    <img src="Villas/portugal.jpg" alt="Portugal">
+                    <h3>Portugal</h3>
+                </div>
+                <div class="destino-card glass-effect">
+                    <img src="Villas/croatia.jpg" alt="Croacia">
+                    <h3>Croatia</h3>
+                </div>
+                <div class="destino-card glass-effect">
+                    <img src="Villas/amsterdam.jpg" alt="Amsterdam">
+                    <h3>Amsterdam</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Sección Por Qué Nosotros -->
+    <section id="quienes-somos" class="section why-us-section">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            
+            <div class="why-us-content">
+                <div class="why-us-text">
+                    <h3>100% Personalized Service</h3>
+                    <p>At Go Access, we value your time. Our journeys are tailored specifically for you. We want to know you and understand what you seek. For us, every trip is a memory and every traveler is unique.</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card glass-effect">
+                        <h3>+10</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="stat-card glass-effect">
+                        <h3>+100</h3>
+                        <p>Satisfied Clients</p>
+                    </div>
+                    <div class="stat-card glass-effect">
+                        <h3>+200</h3>
+                        <p>Extraordinary Journeys</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-whatsapp">
+                <a href="#" class="btn btn-primary btn-large">Contact via WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Sección Newsletter / Contacto -->
+    <section id="contacto" class="section newsletter-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p class="section-subtitle">We know you're ready to begin! Our team of professionals is waiting for you, just one click away.</p>
+            
+            <div class="contact-layout">
+                <div class="contact-form glass-effect">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send</button>
+                    </form>
+                </div>
+                
+                <div class="whatsapp-cta">
+                    <a href="#" class="btn btn-whatsapp btn-large">
+                        <span>💬</span> Contact via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Social Media</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>General Information</h4>
+                    <p>contact@goaccess.com</p>
+                    <p>+52 123 456 7890</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#" class="footer-link">Terms & Conditions</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Go Access. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Hero Tab Switching
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.hero-tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const targetTab = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all tabs and contents
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+                    
+                    // Show corresponding content
+                    const targetContent = document.getElementById(targetTab + '-content');
+                    if (targetContent) {
+                        targetContent.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

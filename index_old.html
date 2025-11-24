@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoAccess - Modern Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Mapbox GL JS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fixed Video Background -->
+    <div class="fixed-video-bg">
+        <video autoplay muted loop id="fixed-bg-video">
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="fixed-video-overlay"></div>
+
+    <!-- Navigation Bar with Glassmorphism Effect -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="GO ACCESS-gold.png" alt="GOACCESS" class="brand-logo">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experiences" class="nav-link">Experiences</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#villas" class="nav-link">Villas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#villaslux" class="nav-link">VillasLux</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+            </ul>
+            <div class="social-icons">
+                <a href="#" class="social-link" aria-label="WhatsApp">
+                    WhatsApp
+                </a>
+                <a href="#" class="social-link" aria-label="X (Twitter)">
+                    X
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    Instagram
+                </a>
+            </div>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="hero">
+        <div class="video-container">
+            <video autoplay muted loop id="bg-video">
+                <source src="Goaccesseheader.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <img src="GO ACCESS-white.png" alt="GOACCESS" class="hero-logo">
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Explore Experiences</button>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L12 15L17 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Upcoming Experiences Section -->
+    <section id="experiences" class="section">
+        <div class="container">
+            <h2>UPCOMING EXPERIENCES</h2>
+            <p>Limitless WorldWide Experiences</p>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-section">
+                <!-- Category Filters -->
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="concerts">Concerts</button>
+                    <button class="filter-btn" data-filter="festivals">Festivals</button>
+                    <button class="filter-btn" data-filter="sports">Sports</button>
+                </div>
+                
+                <!-- Location Filters -->
+                <div class="filter-group">
+                    <button class="filter-btn location-btn" data-location="mexico">
+                        <i class="location-icon"></i>Mexico
+                    </button>
+                    <button class="filter-btn location-btn" data-location="usa">
+                        <i class="location-icon"></i>United States
+                    </button>
+                    <button class="filter-btn location-btn" data-location="uae">
+                        <i class="location-icon"></i>United Arab Emirates
+                    </button>
+                    <button class="filter-btn location-btn" data-location="spain">
+                        <i class="location-icon"></i>Spain
+                    </button>
+                    <button class="filter-btn location-btn" data-location="egypt">
+                        <i class="location-icon"></i>Egypt
+                    </button>
+                </div>
+            </div>
+            
+            <div class="experiences-grid">
+                <div class="experience-card featured">
+                    <div class="experience-image">
+                        <img src="Events/01K2E69MX9FEKW9WN16CTV8PM0.jpg" alt="Zamna Mexico City">
+                        <div class="featured-badge">FEATURED</div>
+                        <div class="image-fade"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Zamna Mexico City 2025</h3>
+                        <div class="experience-details">
+                            <i class="icon-calendar"></i>
+                            <span>Oct 31 & Nov 1</span>
+                            <i class="icon-location"></i>
+                            <span>Sala Urbana</span>
+                        </div>
+                        <button class="experience-btn">GET TICKETS</button>
+                    </div>
+                </div>
+
+                <div class="experience-card featured">
+                    <div class="experience-image">
+                        <img src="Events/01K3H7KV4D07DXJKMNNBFKSYX3.jpg" alt="Zamna Toronto">
+                        <div class="featured-badge">FEATURED</div>
+                        <div class="image-fade"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Zamna Toronto - Halloween Weekend</h3>
+                        <div class="experience-details">
+                            <i class="icon-calendar"></i>
+                            <span>Oct 31 & Nov 1</span>
+                            <i class="icon-location"></i>
+                            <span>International Centre</span>
+                        </div>
+                        <button class="experience-btn">GET TICKETS</button>
+                    </div>
+                </div>
+
+                <div class="experience-card featured">
+                    <div class="experience-image">
+                        <img src="Events/01K3R6FZPHEXY1M505AJAX1MKT.png" alt="Untold Dubai">
+                        <div class="featured-badge">FEATURED</div>
+                        <div class="image-fade"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Untold Dubai's Mega Festival</h3>
+                        <div class="experience-details">
+                            <i class="icon-calendar"></i>
+                            <span>Nov 6-9</span>
+                            <i class="icon-location"></i>
+                            <span>Dubai Parks & Resorts</span>
+                        </div>
+                        <button class="experience-btn">GET TICKETS</button>
+                    </div>
+                </div>
+
+                <div class="experience-card featured">
+                    <div class="experience-image">
+                        <img src="Events/01K6N6AXMWNG5BKMYR4CEKRKRT.png" alt="Zamna San Francisco">
+                        <div class="featured-badge">FEATURED</div>
+                        <div class="image-fade"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Zamna San Francisco 2025</h3>
+                        <div class="experience-details">
+                            <i class="icon-calendar"></i>
+                            <span>Nov 1 & Nov 2</span>
+                            <i class="icon-location"></i>
+                            <span>The Midway</span>
+                        </div>
+                        <button class="experience-btn">GET TICKETS</button>
+                    </div>
+                </div>
+
+                <div class="experience-card featured">
+                    <div class="experience-image">
+                        <img src="Events/01K6R8W3CE2J6PV8X164ARJKVQ.png" alt="Zamna Sharm El-Sheikh">
+                        <div class="featured-badge">FEATURED</div>
+                        <div class="image-fade"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Zamna Sharm El-Sheikh</h3>
+                        <div class="experience-details">
+                            <i class="icon-calendar"></i>
+                            <span>Nov 21 & Nov 22</span>
+                            <i class="icon-location"></i>
+                            <span>Khorom Valley, Egypt</span>
+                        </div>
+                        <button class="experience-btn">GET TICKETS</button>
+                    </div>
+                </div>
+
+                <div class="experience-card featured">
+                    <div class="experience-image">
+                        <img src="Events/01K4WV8C73Z4EBBJ33E8Y5R86Q.png" alt="MRAK New Year's Eve">
+                        <div class="featured-badge">FEATURED</div>
+                        <div class="image-fade"></div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>MRAK Live - New Year's Eve</h3>
+                        <div class="experience-details">
+                            <i class="icon-calendar"></i>
+                            <span>Dec 31</span>
+                            <i class="icon-location"></i>
+                            <span>Laguna - Tulum</span>
+                        </div>
+                        <button class="experience-btn">GET TICKETS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Villas Section with Carousel -->
+    <section id="villas" class="section">
+        <div class="container">
+            <div class="villa-section-wrapper">
+                <!-- Left Side - Text -->
+                <div class="villa-content">
+                    <div class="villa-text">
+                        <h2>CURATED LUXURY</h2>
+                        <h3>Handpicked Destinations</h3>
+                        <p>We handpick each villa to ensure an unparalleled luxury experience. From breathtaking oceanfront estates to secluded mountain retreats, every property in our collection represents the pinnacle of sophistication and comfort.</p>
+                        <p>Experience the world's most exclusive destinations where luxury meets extraordinary.</p>
+                        <button class="villa-cta-btn">EXPLORE COLLECTION</button>
+                    </div>
+                </div>
+                
+                <!-- Right Side - Carousel -->
+                <div class="villa-carousel-wrapper">
+                    <div class="villa-carousel-container">
+                        <div class="villa-carousel">
+                            <div class="carousel-track">
+                                <div class="villa-slide active">
+                                    <div class="villa-card">
+                                        <img src="Villas/home-has-swimming-pool-view-ocean.jpg" alt="Villa with Ocean View Pool" class="villa-image">
+                                        <button class="book-now-btn">Book Now</button>
+                                        <div class="villa-info">
+                                            <h3>Ocean View Villa</h3>
+                                            <p>Stunning villa with infinity pool overlooking the ocean</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="villa-slide">
+                                    <div class="villa-card">
+                                        <img src="Villas/home-is-market-1-5-million.jpg" alt="Luxury Market Villa" class="villa-image">
+                                        <button class="book-now-btn">Book Now</button>
+                                        <div class="villa-info">
+                                            <h3>Premium Estate</h3>
+                                            <p>Exclusive luxury estate with world-class amenities</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="villa-slide">
+                                    <div class="villa-card">
+                                        <img src="Villas/home-person-is-market-1-5-million.jpg" alt="Executive Villa" class="villa-image">
+                                        <button class="book-now-btn">Book Now</button>
+                                        <div class="villa-info">
+                                            <h3>Executive Retreat</h3>
+                                            <p>Perfect for high-end corporate events and retreats</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="villa-slide">
+                                    <div class="villa-card">
+                                        <img src="Villas/modern-building-with-swimming-pool-trees-chairs-urban-landscape-with-blue-sky-reflecting-pool.jpg" alt="Modern Urban Villa" class="villa-image">
+                                        <button class="book-now-btn">Book Now</button>
+                                        <div class="villa-info">
+                                            <h3>Urban Oasis</h3>
+                                            <p>Modern villa with stunning urban landscape views</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="villa-slide">
+                                    <div class="villa-card">
+                                        <img src="Villas/modern-villa-with-ocean-view-infinity-pool.jpg" alt="Modern Villa Infinity Pool" class="villa-image">
+                                        <button class="book-now-btn">Book Now</button>
+                                        <div class="villa-info">
+                                            <h3>Infinity Paradise</h3>
+                                            <p>Contemporary design with breathtaking infinity pool</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="villa-slide">
+                                    <div class="villa-card">
+                                        <img src="Villas/modern-villa-with-ocean-view-sunset.jpg" alt="Sunset Villa" class="villa-image">
+                                        <button class="book-now-btn">Book Now</button>
+                                        <div class="villa-info">
+                                            <h3>Sunset Villa</h3>
+                                            <p>Watch spectacular sunsets from this oceanfront paradise</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Carousel Controls -->
+                        <button class="carousel-btn carousel-btn-prev" onclick="moveSlide(-1)">
+                            <span>‹</span>
+                        </button>
+                        <button class="carousel-btn carousel-btn-next" onclick="moveSlide(1)">
+                            <span>›</span>
+                        </button>
+                        
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                            <button class="indicator active" onclick="currentSlide(1)"></button>
+                            <button class="indicator" onclick="currentSlide(2)"></button>
+                            <button class="indicator" onclick="currentSlide(3)"></button>
+                            <button class="indicator" onclick="currentSlide(4)"></button>
+                            <button class="indicator" onclick="currentSlide(5)"></button>
+                            <button class="indicator" onclick="currentSlide(6)"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- VILLASLUX Interactive Map Section -->
+    <section id="villaslux" class="section villaslux-section">
+        <div class="container">
+            <h2>VILLASLUX</h2>
+            <p>Discover Your Perfect Villa with Interactive Exploration</p>
+            
+            <div class="villaslux-container">
+                <!-- Left Panel - Advanced Filters -->
+                <div class="villaslux-filters">
+                    <div class="filter-panel">
+                        <h3>Find Your Perfect Villa</h3>
+                        
+                        <!-- Location Search -->
+                        <div class="filter-group">
+                            <label for="location-search">Location</label>
+                            <input type="text" id="location-search" placeholder="Search destination..." class="filter-input">
+                        </div>
+
+                        <!-- Date Selection -->
+                        <div class="filter-group">
+                            <label>Check-in & Check-out</label>
+                            <div class="date-inputs">
+                                <input type="date" id="checkin-date" class="filter-input date-input">
+                                <input type="date" id="checkout-date" class="filter-input date-input">
+                            </div>
+                        </div>
+
+                        <!-- Guests -->
+                        <div class="filter-group">
+                            <label for="guest-count">Guests</label>
+                            <div class="slider-container">
+                                <input type="range" id="guest-count" min="1" max="20" value="2" class="filter-slider">
+                                <span class="slider-value">2 guests</span>
+                            </div>
+                        </div>
+
+                        <!-- Price Range -->
+                        <div class="filter-group">
+                            <label for="price-range">Price Range (per night)</label>
+                            <div class="slider-container">
+                                <input type="range" id="price-range" min="500" max="10000" value="2000" class="filter-slider">
+                                <span class="slider-value">$2,000</span>
+                            </div>
+                        </div>
+
+                        <!-- Villa Type -->
+                        <div class="filter-group">
+                            <label>Villa Type</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="beachfront" class="villa-type-filter">
+                                    <span class="checkmark"></span>
+                                    Beachfront
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="mountain" class="villa-type-filter">
+                                    <span class="checkmark"></span>
+                                    Mountain View
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="city" class="villa-type-filter">
+                                    <span class="checkmark"></span>
+                                    City Escape
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="private-island" class="villa-type-filter">
+                                    <span class="checkmark"></span>
+                                    Private Island
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Amenities -->
+                        <div class="filter-group">
+                            <label>Amenities</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="infinity-pool" class="amenity-filter">
+                                    <span class="checkmark"></span>
+                                    Infinity Pool
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="spa" class="amenity-filter">
+                                    <span class="checkmark"></span>
+                                    Private Spa
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="chef" class="amenity-filter">
+                                    <span class="checkmark"></span>
+                                    Private Chef
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="gym" class="amenity-filter">
+                                    <span class="checkmark"></span>
+                                    Private Gym
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="yacht" class="amenity-filter">
+                                    <span class="checkmark"></span>
+                                    Yacht Access
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="helipad" class="amenity-filter">
+                                    <span class="checkmark"></span>
+                                    Helipad
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Activities Nearby -->
+                        <div class="filter-group">
+                            <label>Activities Nearby</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="diving" class="activity-filter">
+                                    <span class="checkmark"></span>
+                                    Scuba Diving
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="golf" class="activity-filter">
+                                    <span class="checkmark"></span>
+                                    Golf Course
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="skiing" class="activity-filter">
+                                    <span class="checkmark"></span>
+                                    Skiing
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="shopping" class="activity-filter">
+                                    <span class="checkmark"></span>
+                                    Luxury Shopping
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="nightlife" class="activity-filter">
+                                    <span class="checkmark"></span>
+                                    Nightlife
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="filter-actions">
+                            <button class="btn-filter btn-clear">Clear All</button>
+                            <button class="btn-filter btn-apply">Apply Filters</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Panel - Interactive Map -->
+                <div class="villaslux-map">
+                    <div id="villa-map" class="map-container">
+                        <!-- Map will be initialized here -->
+                        <div class="map-loading">
+                            <div class="loading-spinner"></div>
+                            <p>Loading luxury villas...</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Map Controls -->
+                    <div class="map-controls">
+                        <button class="map-control-btn" id="zoom-in">+</button>
+                        <button class="map-control-btn" id="zoom-out">-</button>
+                        <button class="map-control-btn" id="reset-view">🌍</button>
+                    </div>
+                    
+                    <!-- Results Counter -->
+                    <div class="results-counter">
+                        <span id="villa-count">Loading villas...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Content Sections -->
+    <!-- Content Sections -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About GOACCESS</h2>
+            <p>We design and offer exclusive travel experiences built around the world's most iconic events, combining luxury, privileged access, and personalized attention. More than just an event – we create unforgettable memories.</p>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Our Mission</h3>
+                    <p>To transform how travelers experience their passions around the globe through exclusive, luxury event-oriented travel experiences that go beyond the ordinary.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Our Vision</h3>
+                    <p>To consolidate as the leading agency in Mexico and Europe for premium event-oriented travel experiences, setting the standard for musical, sporting, and corporate event travel.</p>
+                </div>
+                <div class="about-card">
+                    <h3>What Makes Us Different</h3>
+                    <p>We're not a traditional travel agency. We're an experience platform designed for those seeking the most exclusive events from a unique perspective with style, comfort, and privileged access.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

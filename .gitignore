@@ -1,0 +1,11 @@
+# Ignore all video files
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Exception for the background video used in the site
+!background.mp4
+
+# Ignore zip files
+*.zip
