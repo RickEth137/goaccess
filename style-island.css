@@ -43,27 +43,6 @@
         rgba(0, 0, 0, 0.4) 100%
     );
     z-index: -9;
-    transition: background 0.3s ease;
-}
-
-/* Light theme video overlay */
-.light-theme .fixed-video-overlay {
-    background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.5) 0%,
-        rgba(255, 255, 255, 0.3) 50%,
-        rgba(255, 255, 255, 0.5) 100%
-    );
-}
-
-/* Dark theme video overlay */
-.dark-theme .fixed-video-overlay {
-    background: linear-gradient(
-        135deg,
-        rgba(0, 0, 0, 0.5) 0%,
-        rgba(0, 0, 0, 0.3) 50%,
-        rgba(0, 0, 0, 0.5) 100%
-    );
 }
 
 /* Light Theme Variables (Default) */
@@ -207,14 +186,14 @@ h1, h2, h3, h4, h5, h6, .hero-tagline, .section-title {
 }
 
 .nav-logo .logo-img {
-    height: 32px;
+    height: 48px;
     width: auto;
     transition: all 0.3s ease;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
 .top-nav.scrolled .nav-logo .logo-img {
-    height: 28px;
+    height: 40px;
 }
 
 .nav-links {
@@ -264,6 +243,28 @@ h1, h2, h3, h4, h5, h6, .hero-tagline, .section-title {
 .light-theme .nav-link:hover {
     color: var(--accent-color);
     text-shadow: none;
+}
+
+/* Language Switcher */
+.nav-link.lang-switch {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link.lang-switch:hover {
+    border-color: var(--accent-color);
+    background: rgba(201, 169, 97, 0.1);
+}
+
+.nav-link.lang-switch::after {
+    display: none;
+}
+
+.light-theme .nav-link.lang-switch {
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
 .nav-hamburger {
@@ -964,18 +965,17 @@ section {
 }
 
 .contact-form-layout {
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-form-clean {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 100%;
 }
 
 .form-row input {
@@ -1952,4 +1952,488 @@ section {
         width: 50px;
         height: 50px;
     }
+}
+
+/* Hero Scroll Indicator */
+.scroll-indicator-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+}
+
+.scroll-indicator-hero span {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.scroll-indicator-hero .scroll-icon {
+    width: 44px;
+    height: 44px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.scroll-indicator-hero .scroll-icon svg {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.scroll-indicator-hero:hover .scroll-icon {
+    border-color: var(--accent-color);
+    background: rgba(201, 169, 97, 0.1);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Parallax Section Icons */
+.parallax-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.parallax-icons svg {
+    color: var(--accent-color);
+    opacity: 0.8;
+}
+
+/* Destinations Description Color Enhancement */
+.destinations-description {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+/* Newsletter Section - Elegant Minimal Design */
+.newsletter-section {
+    padding: 4rem 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.newsletter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.newsletter-content {
+    flex: 1;
+}
+
+.newsletter-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+}
+
+.newsletter-subtitle {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 300;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex: 1;
+    max-width: 400px;
+}
+
+.newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-right: none;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 300;
+}
+
+.newsletter-form input[type="email"]:focus {
+    border-color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.newsletter-form button {
+    padding: 1rem 1.25rem;
+    background: var(--accent-color);
+    color: #fff;
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-form button svg {
+    transition: transform 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+}
+
+.newsletter-form button:hover svg {
+    transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+    .newsletter-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .newsletter-form {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .newsletter-form input[type="email"] {
+        border-radius: 0;
+        border-right: none;
+    }
+    
+    .scroll-indicator-hero {
+        margin-top: 1.5rem;
+    }
+    
+    .scroll-indicator-hero .scroll-icon {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+/* ==========================================
+   LIGHT THEME - COMPREHENSIVE STYLES
+   ========================================== */
+
+/* Light Theme - Section Backgrounds */
+.light-theme .about-intro-section,
+.light-theme .destinations-section,
+.light-theme .concierge-section,
+.light-theme .events-section,
+.light-theme .why-us-section,
+.light-theme .contact-section {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+/* Light Theme - All Section Titles */
+.light-theme .section-title {
+    color: #1a1c18;
+    text-shadow: none;
+}
+
+.light-theme .section-subtitle {
+    color: #555;
+}
+
+.light-theme .section-description {
+    color: #555;
+}
+
+.light-theme .section-description em {
+    color: #444;
+}
+
+/* Light Theme - About Section */
+.light-theme .about-intro-section .section-description {
+    color: #444;
+}
+
+/* Light Theme - Destinations */
+.light-theme .destinations-description {
+    color: #555;
+    text-shadow: none;
+}
+
+.light-theme .destination-content h3 {
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.light-theme .destination-subtitle {
+    color: rgba(255,255,255,0.9);
+}
+
+.light-theme .explore-link {
+    color: var(--accent-color);
+}
+
+/* Light Theme - Carousel Navigation */
+.light-theme .carousel-nav {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+.light-theme .carousel-nav:hover {
+    background: var(--accent-color);
+    color: #fff;
+}
+
+/* Light Theme - Parallax Section - Keep dark for contrast */
+.light-theme .parallax-text-section {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.light-theme .parallax-content-center h2 {
+    color: #fff;
+}
+
+/* Light Theme - Services Section */
+.light-theme .concierge-section .section-subtitle {
+    color: #555;
+}
+
+.light-theme .concierge-section .section-subtitle em {
+    color: #444;
+}
+
+/* Light Theme - Service Cards (keep overlay dark for readability) */
+.light-theme .service-content h3 {
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.light-theme .service-content p {
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Light Theme - Events Section */
+.light-theme .events-section .section-subtitle {
+    color: #555;
+}
+
+.light-theme .event-card {
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.light-theme .event-content h3 {
+    color: #1a1c18;
+}
+
+.light-theme .event-date {
+    color: var(--accent-color);
+}
+
+.light-theme .event-location {
+    color: #666;
+}
+
+.light-theme .btn-event-whatsapp {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.light-theme .btn-event-whatsapp:hover {
+    background: var(--accent-color);
+    color: #fff;
+}
+
+/* Light Theme - Why Choose Us */
+.light-theme .why-us-text-block p {
+    color: #444;
+}
+
+.light-theme .stat-card-clean {
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .stat-card-clean h3 {
+    color: var(--accent-color);
+}
+
+.light-theme .stat-card-clean p {
+    color: #555;
+}
+
+/* Light Theme - Contact Section */
+.light-theme .contact-form-clean input {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: #1a1c18;
+}
+
+.light-theme .contact-form-clean input::placeholder {
+    color: #888;
+}
+
+.light-theme .contact-form-clean input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(201, 169, 97, 0.1);
+}
+
+.light-theme .btn-primary {
+    background: var(--accent-color);
+    color: #fff;
+}
+
+.light-theme .btn-primary:hover {
+    background: var(--accent-hover);
+}
+
+/* Light Theme - WhatsApp Buttons */
+.light-theme .btn-whatsapp-large {
+    background: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+}
+
+.light-theme .btn-whatsapp-large:hover {
+    background: var(--accent-hover);
+}
+
+/* Light Theme - Newsletter */
+.light-theme .newsletter-section {
+    background: rgba(0, 0, 0, 0.04);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .newsletter-title {
+    color: #1a1c18;
+}
+
+.light-theme .newsletter-subtitle {
+    color: #666;
+}
+
+.light-theme .newsletter-form input[type="email"] {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: #1a1c18;
+}
+
+.light-theme .newsletter-form input[type="email"]::placeholder {
+    color: #888;
+}
+
+.light-theme .newsletter-form input[type="email"]:focus {
+    border-color: var(--accent-color);
+}
+
+.light-theme .newsletter-form button {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* Light Theme - Footer */
+.light-theme .footer {
+    background: rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .footer h4 {
+    color: #1a1c18;
+}
+
+.light-theme .footer a {
+    color: #555;
+}
+
+.light-theme .footer p {
+    color: #666;
+}
+
+.light-theme .footer a:hover {
+    color: var(--accent-color);
+}
+
+.light-theme .footer-bottom {
+    border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .footer-bottom p {
+    color: #888;
+}
+
+/* Light Theme - Modal Form */
+.light-theme .form-modal-container {
+    background: #fff;
+}
+
+.light-theme .form-title {
+    color: #1a1c18;
+}
+
+.light-theme .form-subtitle {
+    color: #666;
+}
+
+.light-theme .step-title {
+    color: #1a1c18;
+}
+
+.light-theme .form-group label {
+    color: #333;
+}
+
+.light-theme .form-group input,
+.light-theme .form-group select,
+.light-theme .form-group textarea {
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0.15);
+    color: #1a1c18;
+}
+
+.light-theme .form-group input:focus,
+.light-theme .form-group select:focus,
+.light-theme .form-group textarea:focus {
+    border-color: var(--accent-color);
+}
+
+.light-theme .radio-label span {
+    color: #333;
+}
+
+/* Light Theme - Theme Toggle Button */
+.light-theme .theme-toggle {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
